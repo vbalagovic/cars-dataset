@@ -41,7 +41,7 @@ All data is structured and available in **CSV**, **JSON**, and **SQL** formats.
 }
 ```
 
-Purchase securely: (Stripe Payment Link)[https://buy.stripe.com/28EdR89355ee48z0Tx3Je01]
+Purchase securely: [Stripe Payment Link](https://buy.stripe.com/28EdR89355ee48z0Tx3Je01)
 📧 For instructions or custom licensing: greybalagovic@gmail.com
 
 ⸻
