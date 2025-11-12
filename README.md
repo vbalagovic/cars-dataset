@@ -1,6 +1,6 @@
 # 🚗 Global Car Specs & Features Dataset (1990–2025)
 
-A complete, developer-friendly **automotive dataset** featuring over **6,000 vehicle variants** from **100+ global brands**, including full specifications, performance data, dimensions, and features.
+A complete, developer-friendly **automotive dataset** featuring over **12,000 vehicle variants** from **100+ global brands**, including full specifications, performance data, dimensions, and features.
 
 Perfect for:
 - 🧑‍💻 Developers building car comparison or lookup apps  
