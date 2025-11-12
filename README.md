@@ -12,7 +12,7 @@ Perfect for:
 
 ## 📦 What’s Included
 
-- **6,000+ variants** from 1990–2025  
+- **12,000+ variants** from 1990–2025  
 - **100+ brands**  
 - Detailed fields:
   - `brand`, `model`, `variant`, `year`
