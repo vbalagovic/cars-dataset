@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "brand": "Alfa Romeo",
+    "model": "146",
+    "start_year": 1994,
+    "end_year": 2001,
+    "vehicle_id": 64,
+    "variant_name": "1999 Alfa Romeo 146 1.4 Twin Spark 16V specs",
+    "year": 1999,
+    "specifications": {
+      "doors": 5,
+      "price": 15288.0,
+      "seats": 5,
+      "engine": {
+        "fuel": "gasoline",
+        "type": "fuel engine",
+        "torque": 124,
+        "power_hp": 103,
+        "power_kw": 76,
+        "cylinders": 4,
+        "cubic_capacity": 1370
+      },
+      "weight": 1135,
+      "body_type": "5-doors, hatchback",
+      "dimensions": {
+        "width": 1712,
+        "height": 1426,
+        "length": 4235,
+        "wheelbase": 2540
+      },
+      "drive_type": "front",
+      "performance": {
+        "top_speed": 187,
+        "co2_emissions": 189,
+        "acceleration_0_100": 115.0,
+        "fuel_consumption_city": 107.0,
+        "fuel_consumption_highway": 63.0,
+        "fuel_consumption_combined": 79.0
+      },
+      "transmission": {
+        "type": "manual",
+        "gears": 5,
+        "description": "Manual"
+      }
+    },
+    "features": [
+      "Crash Test Result: not tested",
+      "ABS",
+      "Driver's Airbag",
+      "Passenger Airbag",
+      "Side Airbags: € 340",
+      "Central Door Locking",
+      "Power Steering",
+      "Reading Lamp(s): yes(front)",
+      "Tachometer",
+      "Metallic Paint: € 431",
+      "Front Fog Lights: € 250"
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "Audi",
+    "model": "A4",
+    "start_year": 1995,
+    "end_year": null,
+    "vehicle_id": 107,
+    "variant_name": "2019 Audi A4 35 TFSI Pro Line specs",
+    "year": 2019,
+    "specifications": {
+      "doors": 4,
+      "price": 42090.0,
+      "seats": 5,
+      "engine": {
+        "fuel": "gasoline",
+        "type": "fuel engine",
+        "torque": 270,
+        "power_hp": 150,
+        "power_kw": 110,
+        "cylinders": 4,
+        "cubic_capacity": 1984
+      },
+      "weight": 1415,
+      "body_type": "4-doors, sedan",
+      "dimensions": {
+        "width": 1847,
+        "height": 1431,
+        "length": 4762,
+        "wheelbase": 2820
+      },
+      "drive_type": "front",
+      "performance": {
+        "top_speed": 225,
+        "co2_emissions": 126,
+        "acceleration_0_100": 89.0,
+        "fuel_consumption_city": 71.0,
+        "fuel_consumption_highway": 46.0,
+        "fuel_consumption_combined": 55.0
+      },
+      "transmission": {
+        "type": "automatic",
+        "gears": 7,
+        "description": "Automatic"
+      }
+    },
+    "features": [
+      "Crash Test Result: *****",
+      "ABS",
+      "Stability Control",
+      "Driver's Airbag",
+      "Passenger Airbag",
+      "Hill Assist",
+      "Lane Assist: € 840",
+      "Keyless Entry/start",
+      "Air Conditioning: yes(automatically)",
+      "Navigation System: yes(with color display)",
+      "Led Headlights",
+      "Daytime Running Lights"
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "BMW",
+    "model": "3 Series",
+    "start_year": 1990,
+    "end_year": null,
+    "vehicle_id": 45,
+    "variant_name": "2020 BMW 320i Sedan specs",
+    "year": 2020,
+    "specifications": {
+      "doors": 4,
+      "price": 48500.0,
+      "seats": 5,
+      "engine": {
+        "fuel": "gasoline",
+        "type": "fuel engine",
+        "torque": 300,
+        "power_hp": 184,
+        "power_kw": 135,
+        "cylinders": 4,
+        "cubic_capacity": 1998
+      },
+      "weight": 1545,
+      "body_type": "4-doors, sedan",
+      "dimensions": {
+        "width": 1827,
+        "height": 1442,
+        "length": 4709,
+        "wheelbase": 2851
+      },
+      "drive_type": "rear",
+      "performance": {
+        "top_speed": 235,
+        "co2_emissions": 133,
+        "acceleration_0_100": 74.0,
+        "fuel_consumption_city": 73.0,
+        "fuel_consumption_highway": 48.0,
+        "fuel_consumption_combined": 58.0
+      },
+      "transmission": {
+        "type": "automatic",
+        "gears": 8,
+        "description": "Automatic"
+      }
+    },
+    "features": [
+      "Crash Test Result: *****",
+      "ABS",
+      "Brake Assist",
+      "Stability Control",
+      "Traction Control",
+      "Driver's Airbag",
+      "Passenger Airbag",
+      "Side Airbags: yes(front)",
+      "Head / Curtain Airbags: yes(front & rear)",
+      "Cruise Control",
+      "Air Conditioning: yes(automatically)",
+      "Parking Sensors: yes(front & rear)",
+      "Reverse Camera",
+      "Heated Seats",
+      "Leather Upholstery",
+      "Navigation System: yes(with touchscreen)",
+      "Bluetooth",
+      "Apple CarPlay",
+      "Alloy Wheels",
+      "Led Headlights",
+      "LED Rear Lighting"
+    ]
+  }
+]
