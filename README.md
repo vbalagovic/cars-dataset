@@ -241,6 +241,10 @@ Try the API and explore the dataset interactively:
 
 **[autoprice-api-156269434892.europe-west1.run.app](https://autoprice-api-156269434892.europe-west1.run.app)**
 
+## Contact
+
+For licensing inquiries, custom exports, or API access: **greybalagovic@gmail.com**
+
 ## License
 
 This dataset is proprietary. Sample data provided for evaluation purposes only.
