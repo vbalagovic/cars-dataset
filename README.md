@@ -1,17 +1,55 @@
 # CarsDataset
 
-A comprehensive vehicle specifications database covering **cars, trucks, and motorcycles** — **35,000+ variants** across **370+ brands**.
+Vehicle specifications database -- **54,000+ variants** across **370+ brands**. Cars, trucks & motorcycles.
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_It_Now-3b82f6?style=for-the-badge)](https://autoprice-api-156269434892.europe-west1.run.app)
+[![API Docs](https://img.shields.io/badge/API_Docs-FastAPI-22c55e?style=for-the-badge)](https://autoprice-api-156269434892.europe-west1.run.app/docs)
 
 | Dataset | Variants | Brands | Year Range | Spec Fields |
 |---------|----------|--------|------------|-------------|
-| Cars | 27,433 | 108 | 1898-2026 | 40+ |
+| Cars | 47,344 | 108 | 1898-2026 | 40+ |
 | Trucks | 5,492 | 95 | 1950-2025 | 45+ |
 | Motorcycles | 1,858 | 171 | 1902-2023 | 40+ |
-| **Total** | **34,783** | **370+** | **1898-2026** | |
+| **Total** | **54,694** | **370+** | **1898-2026** | |
+
+## API Quick Start
+
+No API key needed for the preview endpoint -- try it right now:
+
+```bash
+curl "https://autoprice-api-156269434892.europe-west1.run.app/api/v1/preview/search?brand=BMW&power_min=300"
+```
+
+Response:
+```json
+{
+  "total": 12,
+  "page": 1,
+  "page_size": 20,
+  "results": [
+    {
+      "brand": "BMW",
+      "model": "M3",
+      "year": 2021,
+      "trim": "M3 Competition",
+      "segment": "Sedan",
+      "fuel_type": "gasoline",
+      "power_hp": 510,
+      "torque_nm": 650,
+      "acceleration_0_100_s": "3.9",
+      "top_speed_kmh": 290,
+      "price_eur": 97800,
+      "features": ["M Drive Professional", "Adaptive Suspension", "...+82 more"]
+    }
+  ]
+}
+```
+
+Full API access (all 54,000+ vehicles, 50 results/page) requires an API key via `X-API-Key` header.
 
 ## Cars Examples
 
-### Electric Vehicle — Tesla Model 3
+### Electric Vehicle -- Tesla Model 3
 
 ```json
 {
@@ -37,7 +75,7 @@ A comprehensive vehicle specifications database covering **cars, trucks, and mot
 }
 ```
 
-### Supercar — Ferrari SF90 Spider
+### Supercar -- Ferrari SF90 Spider
 
 ```json
 {
@@ -58,7 +96,7 @@ A comprehensive vehicle specifications database covering **cars, trucks, and mot
 }
 ```
 
-### Luxury Sedan — BMW 530d
+### Luxury Sedan -- BMW 530d
 
 ```json
 {
@@ -84,7 +122,7 @@ A comprehensive vehicle specifications database covering **cars, trucks, and mot
 
 ## Trucks Examples
 
-### Heavy Truck — Mercedes-Benz Actros
+### Heavy Truck -- Mercedes-Benz Actros
 
 ```json
 {
@@ -111,7 +149,7 @@ A comprehensive vehicle specifications database covering **cars, trucks, and mot
 }
 ```
 
-### Light Truck — Volkswagen Crafter
+### Light Truck -- Volkswagen Crafter
 
 ```json
 {
@@ -132,7 +170,7 @@ A comprehensive vehicle specifications database covering **cars, trucks, and mot
 
 ## Motorcycles Examples
 
-### Superbike — Ducati Panigale V4
+### Superbike -- Ducati Panigale V4
 
 ```json
 {
@@ -164,7 +202,7 @@ A comprehensive vehicle specifications database covering **cars, trucks, and mot
 }
 ```
 
-### Adventure — BMW R 1250 GS
+### Adventure -- BMW R 1250 GS
 
 ```json
 {
@@ -279,52 +317,46 @@ Each vehicle includes an array of equipment/feature strings (avg 84 per vehicle)
 ## Brand Coverage
 
 ### Cars (108 brands)
-**Premium** — Audi, BMW, Mercedes-Benz, Lexus, Volvo, Jaguar, Porsche, Genesis
-**Mass Market** — Toyota, Honda, Ford, Volkswagen, Hyundai, Kia, Mazda, Nissan, Subaru
-**Supercar** — Ferrari, Lamborghini, McLaren, Bugatti, Pagani, Koenigsegg, Aston Martin
-**Electric** — Tesla, BYD, Rivian, Polestar, Lucid, NIO, Xpeng
+**Premium** -- Audi, BMW, Mercedes-Benz, Lexus, Volvo, Jaguar, Porsche, Genesis
+**Mass Market** -- Toyota, Honda, Ford, Volkswagen, Hyundai, Kia, Mazda, Nissan, Subaru
+**Supercar** -- Ferrari, Lamborghini, McLaren, Bugatti, Pagani, Koenigsegg, Aston Martin
+**Electric** -- Tesla, BYD, Rivian, Polestar, Lucid, NIO, Xpeng
 
 ### Trucks (95 brands)
-**European** — Mercedes-Benz, Volvo, Scania, MAN, DAF, Iveco, Renault
-**Global** — Tata, Isuzu, Hino, Mitsubishi Fuso, KamAZ, Dongfeng, FAW
+**European** -- Mercedes-Benz, Volvo, Scania, MAN, DAF, Iveco, Renault
+**Global** -- Tata, Isuzu, Hino, Mitsubishi Fuso, KamAZ, Dongfeng, FAW
 
 ### Motorcycles (171 brands)
-**Japanese** — Honda, Yamaha, Kawasaki, Suzuki
-**European** — Ducati, BMW, KTM, Triumph, Aprilia, Husqvarna
-**American** — Harley-Davidson, Indian, Zero
-**Scooter** — Vespa, Piaggio, Kymco, SYM
+**Japanese** -- Honda, Yamaha, Kawasaki, Suzuki
+**European** -- Ducati, BMW, KTM, Triumph, Aprilia, Husqvarna
+**American** -- Harley-Davidson, Indian, Zero
+**Scooter** -- Vespa, Piaggio, Kymco, SYM
 
 ## Sample Data
 
 This repository contains sample data for evaluation:
 
 ### Cars
-- [`vehicle_data_sample.csv`](vehicle_data_sample.csv) — 37 vehicles across 21 brands
-- [`vehicle_data_sample.json`](vehicle_data_sample.json) — Same data in JSON with full feature arrays
+- [`vehicle_data_sample.csv`](vehicle_data_sample.csv) -- 37 vehicles across 21 brands
+- [`vehicle_data_sample.json`](vehicle_data_sample.json) -- Same data in JSON with full feature arrays
 
 ### Trucks
-- [`truck_data_sample.csv`](truck_data_sample.csv) — 30 trucks across 8 brands
-- [`truck_data_sample.json`](truck_data_sample.json) — Same data in JSON
+- [`truck_data_sample.csv`](truck_data_sample.csv) -- 30 trucks across 8 brands
+- [`truck_data_sample.json`](truck_data_sample.json) -- Same data in JSON
 
 ### Motorcycles
-- [`motorcycle_data_sample.csv`](motorcycle_data_sample.csv) — 30 motorcycles across 8 brands
-- [`motorcycle_data_sample.json`](motorcycle_data_sample.json) — Same data in JSON
+- [`motorcycle_data_sample.csv`](motorcycle_data_sample.csv) -- 30 motorcycles across 8 brands
+- [`motorcycle_data_sample.json`](motorcycle_data_sample.json) -- Same data in JSON
 
 ## Pricing
 
-| Package | Price | Includes |
-|---------|-------|----------|
-| Cars Dataset | $499 one-time | 27,000+ variants, 108 brands, quarterly updates |
-| Trucks Dataset | $399 one-time | 5,400+ variants, 95 brands, quarterly updates |
-| Motorcycles Dataset | $299 one-time | 1,850+ variants, 171 brands, quarterly updates |
-| **Complete Bundle** | **$999 one-time** | **All 3 datasets, save $198** |
-| API Access | $149/month | All datasets, 5,000 req/day |
-
-## Live Demo
-
-Explore the dataset interactively with search, filters, and sample data:
-
-**[autoprice-api-156269434892.europe-west1.run.app](https://autoprice-api-156269434892.europe-west1.run.app)**
+| Package | Price | Includes | |
+|---------|-------|----------|-|
+| Cars Dataset | $499 one-time | 27,000+ variants, 108 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Cars%20Dataset) |
+| Trucks Dataset | $399 one-time | 5,400+ variants, 95 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Trucks%20Dataset) |
+| Motorcycles Dataset | $299 one-time | 1,850+ variants, 171 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Motorcycles%20Dataset) |
+| **Complete Bundle** | **$999 one-time** | **All 3 datasets, save $198** | [**Get Started**](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Complete%20Bundle) |
+| API Access | $149/month | All datasets, 5,000 req/day | [Get Started](mailto:greybalagovic@gmail.com?subject=API%20Access%20Request) |
 
 ## Contact
 
