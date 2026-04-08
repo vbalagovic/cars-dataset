@@ -389,14 +389,16 @@ This repository contains sample data for evaluation:
 
 ## Pricing
 
-| Package | Price | Includes | |
-|---------|-------|----------|-|
-| Cars Dataset | $499 one-time | 47,000+ variants, 108 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Cars%20Dataset) |
-| Trucks Dataset | $399 one-time | 5,400+ variants, 95 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Trucks%20Dataset) |
-| Motorcycles Dataset | $299 one-time | 1,850+ variants, 171 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Motorcycles%20Dataset) |
-| Market Prices | $199/month | 105K+ live listings, 11 countries, Fair Price API | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Market%20Prices) |
-| **Complete Bundle** | **$999 one-time** | **All 3 spec datasets + 1 month prices** | [**Get Started**](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Complete%20Bundle) |
-| API Access | $149/month | All datasets, 5,000 req/day | [Get Started](mailto:greybalagovic@gmail.com?subject=API%20Access%20Request) |
+| Package | Price | Includes |
+|---------|-------|----------|
+| Cars Dataset | $499 one-time | 47,000+ variants, 108 brands, quarterly updates |
+| Trucks Dataset | $399 one-time | 5,400+ variants, 95 brands, quarterly updates |
+| Motorcycles Dataset | $299 one-time | 1,850+ variants, 171 brands, quarterly updates |
+| Market Prices | $199/month | 105K+ live listings, 11 countries, Fair Price API |
+| **Complete Bundle** | **$999 one-time** | **All 3 spec datasets + 1 month prices** |
+| API Access | $149/month | All datasets, 5,000 req/day |
+
+**Ready to purchase?** Email **greybalagovic@gmail.com** with the package you're interested in.
 
 ## Contact
 
