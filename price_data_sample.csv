@@ -1,0 +1,31 @@
+brand,model,year,price_eur,mileage_km,fuel_type,transmission,power_hp,power_kw,condition,country,seller_type
+Citroen,C3 Aircross,,15999.0,15985,Petrol,Automatic,,,used,FR,dealer
+Volkswagen,Arteon,,26749.0,60340,Petrol,Automatic,,,used,DE,dealer
+Dacia,Duster,,25890.0,1000,Petrol,Automatic,,,used,DE,dealer
+Fiat,500,,6300.0,91000,Petrol,Manual,,,used,IT,dealer
+Peugeot,3008,,24995.0,29120,Petrol,Automatic,,,used,BE,dealer
+Opel,Corsa,,11200.0,57000,Petrol,Manual,,,used,DE,dealer
+Porsche,Macan,,22850.0,200000,Petrol,Automatic,,,used,BE,dealer
+Suzuki,Swift,,1950.0,265000,Petrol,Manual,,,used,NL,private
+Suzuki,Swift,,23995.0,27224,Petrol,Manual,,,used,NL,dealer
+Kia,XCeed,,26950.0,37346,Petrol,Automatic,,,used,NL,dealer
+BMW,218,,10590.0,105695,Petrol,Manual,,,used,DE,dealer
+Citroen,Jumpy,,33699.0,4,Diesel,Manual,,,used,BE,dealer
+Renault,Captur,,23900.0,15,LPG,Manual,,,used,IT,dealer
+Land Rover,Defender,,197990.0,0,Petrol,Automatic,,,new,BE,dealer
+MINI,Cooper SE,,19690.0,41450,Electric,Automatic,,,used,DE,dealer
+Nissan,Evalia,,7999.0,198502,Diesel,Manual,,,used,DE,dealer
+SEAT,Ibiza,,3990.0,154800,Petrol,Manual,,,used,DE,dealer
+Tesla,Model 3,,22500.0,75000,Electric,Automatic,,,used,ES,private
+Toyota,Proace,,24490.0,160000,Diesel,Manual,,,used,ES,dealer
+Renault,Talisman,,14750.0,153858,Petrol,Automatic,,,used,NL,private
+Volvo,XC90,,28950.0,60900,Others,Automatic,,,used,FR,dealer
+Peugeot,206 sw,2005,1533.88,290000,Diesel,Manual,108,80,used,BA,private
+Fiat,500X,,12000.0,64101,Petrol,Manual,,,used,BE,dealer
+Hyundai,IONIQ 6,,36450.0,15,Electric,Automatic,,,used,DE,dealer
+YAMAHA,T-MAX,2015,7311.47,12200,,Automatic,46,,used,BA,private
+Ford,Puma,,19900.0,31000,Petrol,Manual,,,used,IT,dealer
+BMW,730,,5999.0,531000,Diesel,Automatic,,,used,DE,dealer
+Alfa Romeo,Stelvio,,30900.0,80000,Diesel,Automatic,,,used,IT,dealer
+Dacia,Duster,,16990.0,73830,Petrol,Manual,,,used,DE,dealer
+Land Rover,Range Rover Velar,,48500.0,72000,Petrol,Automatic,,,used,BE,private

@@ -1,6 +1,6 @@
 # CarsDataset
 
-Vehicle specifications database -- **54,000+ variants** across **370+ brands**. Cars, trucks & motorcycles.
+Vehicle specifications database -- **54,000+ variants** across **370+ brands**. Cars, trucks & motorcycles. Plus **105,000+ real market price listings** from 11 European countries.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_It_Now-3b82f6?style=for-the-badge)](https://autoprice-api-156269434892.europe-west1.run.app)
 [![API Docs](https://img.shields.io/badge/API_Docs-FastAPI-22c55e?style=for-the-badge)](https://autoprice-api-156269434892.europe-west1.run.app/docs)
@@ -10,7 +10,8 @@ Vehicle specifications database -- **54,000+ variants** across **370+ brands**. 
 | Cars | 47,344 | 108 | 1898-2026 | 40+ |
 | Trucks | 5,492 | 95 | 1950-2025 | 45+ |
 | Motorcycles | 1,858 | 171 | 1902-2023 | 40+ |
-| **Total** | **54,694** | **370+** | **1898-2026** | |
+| **Market Prices** | **105,000+** | **419** | **Live** | **12** |
+| **Total Specs** | **54,694** | **370+** | **1898-2026** | |
 
 ## API Quick Start
 
@@ -332,6 +333,40 @@ Each vehicle includes an array of equipment/feature strings (avg 84 per vehicle)
 **American** -- Harley-Davidson, Indian, Zero
 **Scooter** -- Vespa, Piaggio, Kymco, SYM
 
+## Market Prices
+
+**105,000+ real asking prices** from multiple European marketplaces, updated regularly.
+
+| Field | Type | Example |
+|-------|------|---------|
+| `brand` | string | `"BMW"` |
+| `model` | string | `"320d"` |
+| `year` | integer | `2019` |
+| `price_eur` | decimal | `24500.00` |
+| `mileage_km` | integer | `87000` |
+| `fuel_type` | string | `"Diesel"` |
+| `transmission` | string | `"Automatic"` |
+| `power_hp` | integer | `190` |
+| `power_kw` | integer | `140` |
+| `condition` | string | `"used"` |
+| `country` | string | `"DE"` |
+| `seller_type` | string | `"dealer"` |
+
+Coverage: 419 brands, 11 countries (DE, AT, BE, ES, FR, IT, NL, LU, SI, BA, HR).
+
+### Fair Price API
+
+Calculate fair market value for any vehicle based on real listings:
+
+```bash
+curl -X POST "https://autoprice-api-156269434892.europe-west1.run.app/api/v1/fair-price" \
+  -H "X-API-Key: YOUR_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"brand": "BMW", "model": "320d", "year": 2019, "mileage_km": 87000}'
+```
+
+Response includes P25/P50/P75 pricing, mileage-adjusted estimates, and comparable listing count.
+
 ## Sample Data
 
 This repository contains sample data for evaluation:
@@ -348,14 +383,19 @@ This repository contains sample data for evaluation:
 - [`motorcycle_data_sample.csv`](motorcycle_data_sample.csv) -- 30 motorcycles across 8 brands
 - [`motorcycle_data_sample.json`](motorcycle_data_sample.json) -- Same data in JSON
 
+### Market Prices
+- [`price_data_sample.csv`](price_data_sample.csv) -- 30 listings across multiple brands/countries
+- [`price_data_sample.json`](price_data_sample.json) -- Same data in JSON
+
 ## Pricing
 
 | Package | Price | Includes | |
 |---------|-------|----------|-|
-| Cars Dataset | $499 one-time | 27,000+ variants, 108 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Cars%20Dataset) |
+| Cars Dataset | $499 one-time | 47,000+ variants, 108 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Cars%20Dataset) |
 | Trucks Dataset | $399 one-time | 5,400+ variants, 95 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Trucks%20Dataset) |
 | Motorcycles Dataset | $299 one-time | 1,850+ variants, 171 brands, quarterly updates | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Motorcycles%20Dataset) |
-| **Complete Bundle** | **$999 one-time** | **All 3 datasets, save $198** | [**Get Started**](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Complete%20Bundle) |
+| Market Prices | $199/month | 105K+ live listings, 11 countries, Fair Price API | [Get Started](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Market%20Prices) |
+| **Complete Bundle** | **$999 one-time** | **All 3 spec datasets + 1 month prices** | [**Get Started**](mailto:greybalagovic@gmail.com?subject=CarsDataset%20Purchase%20-%20Complete%20Bundle) |
 | API Access | $149/month | All datasets, 5,000 req/day | [Get Started](mailto:greybalagovic@gmail.com?subject=API%20Access%20Request) |
 
 ## Contact
