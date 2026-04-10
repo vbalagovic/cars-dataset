@@ -2,8 +2,8 @@
 
 Vehicle specifications database -- **54,000+ variants** across **370+ brands**. Cars, trucks & motorcycles. Plus **105,000+ real market price listings** from 11 European countries.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_It_Now-3b82f6?style=for-the-badge)](https://autoprice-api-156269434892.europe-west1.run.app)
-[![API Docs](https://img.shields.io/badge/API_Docs-FastAPI-22c55e?style=for-the-badge)](https://autoprice-api-156269434892.europe-west1.run.app/docs)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_It_Now-3b82f6?style=for-the-badge)](https://api.carsdataset.com)
+[![API Docs](https://img.shields.io/badge/API_Docs-FastAPI-22c55e?style=for-the-badge)](https://api.carsdataset.com/docs)
 
 | Dataset | Variants | Brands | Year Range | Spec Fields |
 |---------|----------|--------|------------|-------------|
@@ -18,7 +18,7 @@ Vehicle specifications database -- **54,000+ variants** across **370+ brands**. 
 No API key needed for the preview endpoint -- try it right now:
 
 ```bash
-curl "https://autoprice-api-156269434892.europe-west1.run.app/api/v1/preview/search?brand=BMW&power_min=300"
+curl "https://api.carsdataset.com/api/v1/preview/search?brand=BMW&power_min=300"
 ```
 
 Response:
@@ -359,7 +359,7 @@ Coverage: 419 brands, 11 countries (DE, AT, BE, ES, FR, IT, NL, LU, SI, BA, HR).
 Calculate fair market value for any vehicle based on real listings:
 
 ```bash
-curl -X POST "https://autoprice-api-156269434892.europe-west1.run.app/api/v1/fair-price" \
+curl -X POST "https://api.carsdataset.com/api/v1/fair-price" \
   -H "X-API-Key: YOUR_KEY" \
   -H "Content-Type: application/json" \
   -d '{"brand": "BMW", "model": "320d", "year": 2019, "mileage_km": 87000}'
