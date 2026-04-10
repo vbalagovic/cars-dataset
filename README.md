@@ -354,18 +354,7 @@ Each vehicle includes an array of equipment/feature strings (avg 84 per vehicle)
 
 Coverage: 419 brands, 11 countries (DE, AT, BE, ES, FR, IT, NL, LU, SI, BA, HR).
 
-### Fair Price API
-
-Calculate fair market value for any vehicle based on real listings:
-
-```bash
-curl -X POST "https://api.carsdataset.com/api/v1/fair-price" \
-  -H "X-API-Key: YOUR_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"brand": "BMW", "model": "320d", "year": 2019, "mileage_km": 87000}'
-```
-
-Response includes P25/P50/P75 pricing, mileage-adjusted estimates, and comparable listing count.
+Marketplace names are pseudonymized in API responses (MKT_XXXX codes) so the data is safe to redistribute in your product without exposing upstream sources.
 
 ## Sample Data
 
@@ -394,15 +383,16 @@ This repository contains sample data for evaluation:
 | Cars Dataset | $499 one-time | 47,000+ variants, 108 brands, quarterly updates |
 | Trucks Dataset | $399 one-time | 5,400+ variants, 95 brands, quarterly updates |
 | Motorcycles Dataset | $299 one-time | 1,850+ variants, 171 brands, quarterly updates |
-| Market Prices | $199/month | 105K+ live listings, 11 countries, Fair Price API |
-| **Complete Bundle** | **$999 one-time** | **All 3 spec datasets + 1 month prices** |
-| API Access | $149/month | All datasets, 5,000 req/day |
+| Market Prices Export | $199 one-time | 105K+ listings CSV, 11 countries |
+| **Complete Bundle** | **$999 one-time** | **Cars + Trucks + Motorcycles** |
+| API Starter | $149/month | All endpoints, 1,000 req/min |
+| API Pro | $299/month | All endpoints, 5,000 req/min, priority support |
 
-**Ready to purchase?** Email **greybalagovic@gmail.com** with the package you're interested in.
+**Ready to purchase?** Go straight to checkout at <https://api.carsdataset.com> or email **vedran@knittedlogic.com**.
 
 ## Contact
 
-For licensing inquiries, custom exports, or API access: **greybalagovic@gmail.com**
+For licensing inquiries, custom exports, or API access: **vedran@knittedlogic.com**
 
 ## License
 
