@@ -1,6 +1,6 @@
 # CarsDataset
 
->  **For Sale ATM:** The full CarsDataset platform (API) plus all datasets, with a reselling license — **€7,500 one-time payment**. Interested? [Get in touch](mailto:vedran@knittedlogic.com).
+>  **For Sale ATM:** The full CarsDataset platform (API) plus all datasets, with a reselling license — **€7,500 one-time payment**. Interested? [Get in touch](mailto:vedran@knittedlogic.com). **vedran@knittedlogic.com**
 
 
 Vehicle specifications database -- **54,000+ variants** across **370+ brands**. Cars, trucks & motorcycles. Plus **105,000+ real market price listings** from 11 European countries.
